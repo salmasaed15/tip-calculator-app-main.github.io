@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&family=Poppins:wght@100&family=Space+Mono&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Space Mono;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    min-height: 100vh;
+    background: hsl(185, 22%, 67%);
+    Font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+header{
+    margin-bottom: 20px;
+}
+header h1{
+    letter-spacing: 10px;
+    color: hsl(183, 100%, 15%); 
+}
+.container{ 
+    width: 800px;
+    height: 400px;
+    padding: 30px;
+    background-color:hsl(0, 0%, 100%);
+    display: flex; 
+    align-items:flex-start;
+    justify-content:space-around;
+    /* flex-direction:column; */
+    border-radius: 10px; 
+    /* position: relative; */
+}
+
+.right{
+    /* position: absolute;
+    left:700px;
+    width: 330px;*/
+    height: 330px; 
+    margin: auto;
+    padding: 20px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+}
+.right .amount{
+    margin-bottom: 10px;
+}
+.right .amount h3{
+    color: hsl(185, 41%, 84%);
+    font-size: 15px;
+
+}
+.right .amount p{
+    font-size: 10px;
+    color:hsl(184, 14%, 56%);   
+}
+.right .amount span{
+    color:hsl(172, 85%, 32%);
+    font-size: 20px;
+    padding-left: 90px;
+}
+.right .total h3{
+    color: hsl(185, 41%, 84%);
+    font-size: 15px;
+
+}
+.right .total p{
+    font-size: 10px;
+    color:hsl(184, 14%, 56%);   
+}
+.right .total span{
+    color:hsl(172, 85%, 32%);
+    font-size: 20px;
+    padding-left: 138px;
+} 
+.right button{
+    border:none;
+    background-color: hsl(172, 71%, 57%);
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    width: 280px;
+    padding: 10px 20px;
+    margin-top: 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.left .bill h3{
+    color: hsl(184, 14%, 56%);
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+.left .bill input{
+    width: 340px;
+    height: 40px ;
+    border: 2px solid  hsl(172, 67%, 45%);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+    outline: none;
+}
+.left .bill input:hover{
+    background-color: hsl(180, 6%, 93%);
+}
+.left .select{
+    width: 400px;
+}
+.left .select h3{
+    color: hsl(184, 14%, 56%);
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.left .select button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: hsl(183, 100%, 15%);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* .left .select button.dark:hover{
+    background-color: hsl(172, 71%, 57%);
+} */
+
+.left .select button:hover{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: hsl(172, 71%, 57%);
+    color:hsl(183, 100%, 15%);
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.left .select input.none{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: hsl(180, 6%, 93%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    border: transparent;
+}
+.left .number h3{
+    color: hsl(184, 14%, 56%);
+    font-size: 12px;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+.left .number input{
+    width: 340px;
+    height: 40px ;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: hsl(183, 100%, 15%);
+    border: 2px solid  hsl(172, 67%, 45%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: hsl(180, 6%, 93%);
+
+}
+.left .number h3 span{
+    color: rgba(240, 84, 84, 0.685);
+    margin-left: 70px;
+    display: none;
+}
+
+.active-tip{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+    font-weight: bolder;
+}
+@media (max-width:375px) {
+    .container{
+        width: 300px;
+        height: 700px;
+        flex-direction:column;
+    }
+    .right{
+        height: 200px;
+        width: 250px;
+        padding: 10px;
+    }
+    .right .amount h3{
+        font-size: 12px;
+    }
+    .right .amount span{
+        font-size: 15px;
+        padding-left: 90px;
+    }
+    .right .total h3{
+        font-size: 12px;
+    }
+    .right .total span{
+        font-size: 15px;
+        padding-left: 130px;
+    }
+    .right button{
+        width: 180px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+    .left{
+        width: 250px;
+    }
+    .left .bill input{
+        width: 150px;
+    }
+    .left .number input {
+        width: 180px;
+    }
+    .left .select {
+        width: 250px;
+        
+    }
+    .left .number h3 span{
+        margin-left: 50px;
+    }
+}
+/* //setting */
+
+
+
+.left .bill input{
+    width: 340px;
+    height: 40px ;
+    border: 2px solid  hsl(172, 67%, 45%);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+
+
+.left .select button.dark{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: hsl(183, 100%, 15%);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 15px;
+}
+.left .select button.light{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: hsl(172, 71%, 57%);
+    color:hsl(183, 100%, 15%);
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.left .select button.none{
+    width: 100px;
+    height: 40px;
+    border: 2px solid  hsl(172, 67%, 45%);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color:#FFF;
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    font-size: 15px;
+}
+.left .select button.none:hover{
+    background-color: hsl(180, 6%, 93%);
+}
+
+
+.left .number h3{
+    color: hsl(184, 14%, 56%);
+    font-size: 12px;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+.left .number input{
+    width: 340px;
+    height: 40px ;
+    border: 2px solid  rgba(240, 84, 84, 0.685);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+.left .number input:hover{
+    background-color: hsl(180, 6%, 93%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* div{
+    color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    color: hsl(186, 14%, 43%);
+    color: hsl(184, 14%, 56%);
+    color: hsl(185, 41%, 84%);
+    color: hsl(189, 41%, 97%);
+    color:hsl(0, 0%, 100%)
+} */
+
+
+

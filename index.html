@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+
+  <link rel='stylesheet' href='main.css'/>
+  <link rel='stylesheet' href='all.min.css'/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&family=Poppins:wght@100&family=Space+Mono&display=swap" 
+  rel="stylesheet">
+  
+  <title> Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style></style>
+</head>
+<body>
+  <header>
+    <h1>SPLI</h1>
+    <br>
+    <h1>TTER</h1>
+  </header>
+  <div class="container">
+      <div class="left">
+        <div class="bill">
+          <h3>Bill</h3>
+          <input type="number" class="bill-input">
+        </div>
+        <div class="select">
+          <h3>Select Tip %</h3>
+          <button class="tips">5%</button>
+          <button class="tips">10%</button>
+          <button class="tips">15%</button>
+          <button class="tips">25%</button>
+          <button class="tips">50%</button>
+          <input type="number" placeholder="custom" class="none tip-custom">
+        </div>
+        <div class="number">
+          <h3>Number Of People <span class="error">Can`t be zero</span></h3>
+          <input type="number" class="people-input">
+          
+        </div>
+    </div>
+      <div class="right">
+        <div class="amount">
+          <h3>Tip Amount <span class="tip-amount">$ 0.00</span></h3>
+          <p>/ person</p>
+        </div>
+        <div class="total">
+          <h3>Total <span class="total-amount">$ 0.00</span></h3>
+          <p>/ person</p>
+        </div>
+        <button class="reset">RESET</button>
+        
+      </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
